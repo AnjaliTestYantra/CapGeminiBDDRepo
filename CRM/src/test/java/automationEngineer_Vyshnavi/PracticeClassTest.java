@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class PracticeClassTest {
 	@Test
 	public void practiceTest() {
-		Reporter.log("Success", true);
+		Reporter.log("Success, PASS", true);
 
 }
 }
