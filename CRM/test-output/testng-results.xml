@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Report configuration]]>
+    </line>
+    <line>
+      <![CDATA[Established the DB Connectivity]]>
+    </line>
+    <line>
+      <![CDATA[Pre-condition]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to Vtiger]]>
+    </line>
+    <line>
+      <![CDATA[Successfully logged in]]>
+    </line>
+    <line>
+      <![CDATA[=======STARTED======createContactTest]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to contact page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully created the contact]]>
+    </line>
+    <line>
+      <![CDATA[Pass]]>
+    </line>
+    <line>
+      <![CDATA[=======FAILED======createContactTest]]>
+    </line>
+    <line>
+      <![CDATA[Post-condition]]>
+    </line>
+    <line>
+      <![CDATA[Closed the DB Connectivity]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-08-09T12:08:58 IST" name="Default suite" finished-at="2025-08-09T12:10:59 IST" duration-ms="121544">
+    <groups>
+    </groups>
+    <test started-at="2025-08-09T12:08:58 IST" name="Default test" finished-at="2025-08-09T12:10:59 IST" duration-ms="121544">
+      <class name="vtigerCRM_TestNG.CreateContactWithTestNG">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:08:58 IST" name="configBS" finished-at="2025-08-09T12:08:58 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Established the DB Connectivity]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBT()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:08:58 IST" name="configBT" finished-at="2025-08-09T12:08:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Pre-condition]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBT -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:08:58 IST" name="configBC" finished-at="2025-08-09T12:09:18 IST" duration-ms="20595" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to Vtiger]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:09:18 IST" name="configBM" finished-at="2025-08-09T12:09:39 IST" duration-ms="20633" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Successfully logged in]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactTest()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:09:39 IST" name="createContactTest" finished-at="2025-08-09T12:10:51 IST" duration-ms="71520" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Failed to create the contact expected [Anju] but found [Anjali],
+Fail expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Failed to create the contact expected [Anju] but found [Anjali],
+Fail expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at vtigerCRM_TestNG.CreateContactWithTestNG.createContactTest(CreateContactWithTestNG.java:87)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[=======STARTED======createContactTest]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to contact page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully created the contact]]>
+            </line>
+            <line>
+              <![CDATA[Pass]]>
+            </line>
+            <line>
+              <![CDATA[=======FAILED======createContactTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:10:51 IST" name="configAM" finished-at="2025-08-09T12:10:56 IST" duration-ms="4799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:10:56 IST" name="configAC" finished-at="2025-08-09T12:10:59 IST" duration-ms="3587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAT()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:10:59 IST" name="configAT" finished-at="2025-08-09T12:10:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Post-condition]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAT -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:vtigerCRM_TestNG.CreateContactWithTestNG@3bf7ca37]" started-at="2025-08-09T12:10:59 IST" name="configAS" finished-at="2025-08-09T12:10:59 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closed the DB Connectivity]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- vtigerCRM_TestNG.CreateContactWithTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
